@@ -1,7 +1,7 @@
-type TupleToObject<T extends readonly PropertyKey[]> = {
+export type TupleToObject<T extends readonly PropertyKey[]> = {
   [key in T[number]]: key;
 };
 
-type Input = ['a', 'b', 'c'];
+export type Input = ['a', 'b', 'c'];
 
-type Result = TupleToObject<Input>;
+export type Result = TupleToObject<Input>;

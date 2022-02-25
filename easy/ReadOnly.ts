@@ -1,9 +1,9 @@
-type ReadOnly<T extends Record<PropertyKey, any>> = {
+export type ReadOnly<T extends Record<PropertyKey, any>> = {
   readonly [key in keyof T]: T[key];
 }
 
-type Input = {
+export type Input = {
   x: number;
 }
 
-type Result = ReadOnly<Input>;
+export type Result = ReadOnly<Input>;

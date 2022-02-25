@@ -1,5 +1,5 @@
-type Length<Source extends readonly any[]> = Source['length'];
+export type Length<Source extends readonly any[]> = Source["length"];
 
-type Input = ['a', 'b', 'c'];
+export type Input = ["a", "b", "c"];
 
-type Result = Length<Input>;
+export type Result = Length<Input>;

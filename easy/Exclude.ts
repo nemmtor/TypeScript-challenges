@@ -1,10 +1,7 @@
-type MyExclude<T, U> = T extends U ? never : T;
+export type MyExclude<T, U> = T extends U ? never : T;
 
-type Input = 'a' | 'b';
+export type Input = 'a' | 'b';
 
-type ToBeExcluded = 'b';
+export type ToBeExcluded = 'b';
 
-type Result = MyExclude<Input, ToBeExcluded>;
-
-
-
+export type Result = MyExclude<Input, ToBeExcluded>;
